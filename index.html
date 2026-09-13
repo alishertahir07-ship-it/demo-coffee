@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coffee&Co — Crafted Coffee. Good Company.</title>
+
+  <meta name="description"
+        content="Coffee&Co — specialty coffee, signature drinks, sandwiches and desserts. Boulevard Mall, Canal Road, Faisalabad.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<body>
+
+<!-- =========================================================
+     WELCOME / ENTRY OVERLAY
+========================================================= -->
+<div class="welcome-overlay" id="welcomeOverlay">
+
+  <!-- Falling coffee beans + gold dust -->
+  <div class="welcome-confetti" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Center card -->
+  <div class="welcome-card">
+
+    <!-- Coffee cup with steam -->
+    <div class="welcome-cup" aria-hidden="true">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path class="steam steam-1" d="M40 20 Q42 14 40 8" />
+        <path class="steam steam-2" d="M50 18 Q52 12 50 6" />
+        <path class="steam steam-3" d="M60 20 Q62 14 60 8" />
+        <path d="M28 40 L34 78 Q35 84 42 84 L58 84 Q65 84 66 78 L72 40 Z"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="26" y1="40" x2="74" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M72 48 Q86 48 86 60 Q86 72 72 72"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <ellipse cx="50" cy="92" rx="26" ry="2.5"
+                 fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <span class="welcome-eyebrow">WELCOME · TO · COFFEE&CO</span>
+
+    <h1 class="welcome-logo">
+      Coffee<span>&</span>Co
+    </h1>
+
+    <p class="welcome-sub">SPECIALTY COFFEE · FAISALABAD</p>
+
+    <div class="welcome-divider"></div>
+
+    <p class="welcome-quote">
+      "Crafted with intention — <em>where every cup tells a story.</em>"
+    </p>
+
+    <p class="welcome-tag">BOULEVARD MALL · CANAL ROAD · FAISALABAD</p>
+
+    <button class="welcome-button" onclick="enterCafe()">
+      ENTER THE CAFÉ
+      <span>→</span>
+    </button>
+
+  </div>
+</div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+<header class="header" id="header">
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+<header class="header" id="header">
+  <nav class="nav">
+    <a href="#" class="logo">Coffee<span>&</span>Co</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#coffee">Coffee</a></li>
+      <li><a href="#sandwiches">Sandwiches</a></li>
+      <li><a href="#desserts">Desserts</a></li>
+      <li><a href="#experience">Our Story</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#coffee" class="nav-order">ORDER NOW</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#coffee">Coffee</a>
+    <a href="#sandwiches">Sandwiches</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#experience">Our Story</a>
+    <a href="#reserve">Reserve a Table</a>
+  </div>
+</header>
+
+
+<!-- =========================================================
+     HERO — ANIMATED
+========================================================= -->
+<section class="hero">
+
+  <!-- Steam layer -->
+  <div class="hero-steam" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Gold particles layer -->
+  <div class="hero-particles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="hero-content">
+    <span class="eyebrow">COFFEE&CO · EST. 2026</span>
+
+    <h1>
+      Coffee crafted<br>
+      with intention.
+    </h1>
+
+    <p>
+      Specialty coffee, signature drinks and honest food —
+      made for slow mornings, late nights and everything
+      in between.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#coffee" class="btn btn-primary">EXPLORE MENU</a>
+      <a href="#reserve" class="btn btn-outline">RESERVE A TABLE</a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTRO STRIP
+========================================================= -->
+<div class="intro-strip">
+  <span>Specialty Coffee</span>
+  <span>·</span>
+  <span>Fresh Ingredients</span>
+  <span>·</span>
+  <span>Made With Intention</span>
+  <span>·</span>
+  <span>Good Company</span>
+</div>
+
+
+<!-- =========================================================
+     COFFEE SECTION
+========================================================= -->
+<section id="coffee" class="coffee-section">
+  <div class="section-container">
+
+    <div class="section-heading reveal">
+      <div>
+        <span class="eyebrow gold">THE COFFEE MENU</span>
+        <h2>Coffee worth<br>slowing down for.</h2>
+      </div>
+      <p>
+        From classic espresso-based drinks to our
+        signature creations, every cup is carefully
+        balanced and freshly prepared.
+      </p>
+    </div>
+
+    <div class="menu-navigation reveal">
+      <button class="filter-btn active" onclick="filterCoffee('all', this)">ALL COFFEE</button>
+      <button class="filter-btn" onclick="filterCoffee('hot', this)">HOT</button>
+      <button class="filter-btn" onclick="filterCoffee('cold', this)">COLD</button>
+      <button class="filter-btn" onclick="filterCoffee('signature', this)">SIGNATURE</button>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- ESPRESSO -->
+      <article class="product-card coffee-item reveal" data-type="hot">
+        <div class="product-image">
+          <img src="images/espresso.jpg" alt="Espresso">
+          <span class="badge">CLASSIC</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Espresso</h3>
+              <p>Rich · intense · perfectly balanced</p>
+            </div>
+            <span class="price">Rs. 450</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Espresso')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- SPANISH LATTE -->
+      <article class="product-card coffee-item reveal" data-type="hot">
+        <div class="product-image">
+          <img src="images/spanish-latte.jpg" alt="Spanish Latte">
+          <span class="badge">BESTSELLER</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Spanish Latte</h3>
+              <p>Espresso · milk · sweet condensed milk</p>
+            </div>
+            <span class="price">Rs. 650</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Spanish Latte')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- FLAT WHITE -->
+      <article class="product-card coffee-item reveal" data-type="hot">
+        <div class="product-image">
+          <img src="images/flat-white.jpg" alt="Flat White">
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Flat White</h3>
+              <p>Double espresso · silky microfoam</p>
+            </div>
+            <span class="price">Rs. 600</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Flat White')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- COLD BREW -->
+      <article class="product-card coffee-item reveal" data-type="cold">
+        <div class="product-image">
+          <img src="images/cold-brew.jpg" alt="Cold Brew Coffee">
+          <span class="badge">COLD</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Cold Brew</h3>
+              <p>Slow steeped · smooth · naturally sweet</p>
+            </div>
+            <span class="price">Rs. 700</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Cold Brew')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- CARAMEL CLOUD -->
+      <article class="product-card coffee-item reveal" data-type="signature">
+        <div class="product-image">
+          <img src="images/caramel-cloud.jpg" alt="Caramel Cloud Coffee">
+          <span class="badge">SIGNATURE</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Caramel Cloud</h3>
+              <p>Espresso · caramel · creamy cloud foam</p>
+            </div>
+            <span class="price">Rs. 750</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Caramel Cloud')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- NIGHT SHIFT TONIC -->
+      <article class="product-card coffee-item reveal" data-type="cold">
+        <div class="product-image">
+          <img src="images/night-shift-tonic.jpg" alt="Night Shift Tonic">
+          <span class="badge">SIGNATURE</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Night Shift Tonic</h3>
+              <p>Cold brew · tonic · citrus finish</p>
+            </div>
+            <span class="price">Rs. 800</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Night Shift Tonic')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- MIDNIGHT MOCHA -->
+      <article class="product-card coffee-item reveal" data-type="signature">
+        <div class="product-image">
+          <img src="images/midnight-mocha.jpg" alt="Midnight Mocha">
+          <span class="badge">SIGNATURE</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Midnight Mocha</h3>
+              <p>Espresso · dark chocolate · silky milk</p>
+            </div>
+            <span class="price">Rs. 780</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Midnight Mocha')">Add to order</button>
+        </div>
+      </article>
+
+      <!-- CINNAMON HONEY LATTE -->
+      <article class="product-card coffee-item reveal" data-type="signature">
+        <div class="product-image">
+          <img src="images/cinnamon-honey-latte.jpg" alt="Cinnamon Honey Latte">
+          <span class="badge">SEASONAL</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Cinnamon Honey Latte</h3>
+              <p>Espresso · honey · cinnamon · steamed milk</p>
+            </div>
+            <span class="price">Rs. 720</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Cinnamon Honey Latte')">Add to order</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     SIGNATURE FEATURE BANNER
+========================================================= -->
+<section class="signature">
+  <div class="signature-inner">
+    <div class="signature-content reveal">
+      <span class="eyebrow">COFFEE&CO SIGNATURE</span>
+
+      <h2>
+        Some coffees<br>
+        deserve their<br>
+        own moment.
+      </h2>
+
+      <p>
+        Meet the Midnight Mocha — our rich signature
+        chocolate coffee created for evenings,
+        conversations and everything after dark.
+      </p>
+
+      <a href="#coffee" class="btn btn-primary">DISCOVER THE MENU</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     SANDWICH SECTION
+========================================================= -->
+<section id="sandwiches" class="sandwich-section">
+  <div class="section-container">
+
+    <div class="section-heading reveal">
+      <div>
+        <span class="eyebrow gold">FRESH FROM THE KITCHEN</span>
+        <h2>Sandwiches<br>made properly.</h2>
+      </div>
+      <p>
+        Fresh ingredients, generous fillings and
+        toasted bread. The perfect companion to your
+        coffee.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/chicken-fajita-club.jpg" alt="Chicken Fajita Club Sandwich">
+          <span class="badge">BESTSELLER</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Chicken Fajita Club</h3>
+              <p>Grilled chicken · peppers · cheese · house sauce</p>
+            </div>
+            <span class="price">Rs. 950</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Chicken Fajita Club')">Add to order</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/zinger-crunch.jpg" alt="Zinger Crunch Sandwich">
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Zinger Crunch</h3>
+              <p>Crispy chicken · lettuce · spicy mayo</p>
+            </div>
+            <span class="price">Rs. 900</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Zinger Crunch')">Add to order</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/smoked-beef-philly.jpg" alt="Smoked Beef Philly">
+          <span class="badge">SIGNATURE</span>
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Smoked Beef Philly</h3>
+              <p>Smoked beef · caramelized onions · melted cheese</p>
+            </div>
+            <span class="price">Rs. 1,150</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Smoked Beef Philly')">Add to order</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/club-sandwich.jpg" alt="Classic Club Sandwich">
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Classic Club</h3>
+              <p>Chicken · turkey · lettuce · tomato · mayo</p>
+            </div>
+            <span class="price">Rs. 980</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Classic Club')">Add to order</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     DESSERT SECTION
+========================================================= -->
+<section id="desserts" class="dessert-section">
+  <div class="section-container">
+
+    <div class="section-heading reveal">
+      <div>
+        <span class="eyebrow gold">SOMETHING SWEET</span>
+        <h2>Finish with<br>something good.</h2>
+      </div>
+      <p>
+        Small-batch desserts designed to pair perfectly
+        with our coffee.
+      </p>
+    </div>
+
+    <div class="dessert-grid">
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/pastry-cardamom.png" alt="Cardamom Bun">
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Cardamom Bun</h3>
+              <p>Soft · aromatic · freshly baked</p>
+            </div>
+            <span class="price">Rs. 450</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Cardamom Bun')">Add to order</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/brownie.jpg" alt="Chocolate Brownie">
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Dark Chocolate Brownie</h3>
+              <p>Fudgy · dark chocolate · sea salt</p>
+            </div>
+            <span class="price">Rs. 420</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Dark Chocolate Brownie')">Add to order</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-image">
+          <img src="images/cheesecake.jpg" alt="Cheesecake">
+        </div>
+        <div class="product-info">
+          <div class="product-top">
+            <div>
+              <h3>Classic Cheesecake</h3>
+              <p>Creamy · vanilla · biscuit base</p>
+            </div>
+            <span class="price">Rs. 650</span>
+          </div>
+          <button class="add-button" onclick="addToOrder('Classic Cheesecake')">Add to order</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     OUR STORY
+========================================================= -->
+<section id="experience" class="experience">
+  <div class="section-container">
+    <div class="experience-grid">
+
+      <div class="experience-content reveal">
+        <span class="eyebrow gold">OUR STORY</span>
+
+        <h2>
+          A space where<br>
+          flavour meets<br>
+          feeling.
+        </h2>
+
+        <p>
+          At Coffee&Co, we believe a café should be more than
+          a place to grab a drink — it should be an experience.
+          Nestled in the heart of Faisalabad's Boulevard Mall,
+          our café invites you into a world of warmth, artistry,
+          and exceptional taste.
+        </p>
+
+        <p>
+          From carefully sourced coffee beans to freshly prepared
+          food, every detail is crafted with intention. Whether
+          you're here for a quiet morning ritual, a business
+          lunch, or a late-night conversation with friends —
+          every visit should feel worth remembering.
+        </p>
+
+        <div class="experience-quote">
+          "Welcome to the taste of perfection — where every cup
+          takes you on a journey."
+        </div>
+
+        <p>
+          Our passion lies in the details: the perfect crema,
+          the aroma of freshly ground beans, the warmth of a
+          well-lit space, and the sound of good company.
+          Coffee&Co is where Faisalabad comes to slow down.
+        </p>
+
+        <div class="experience-stats">
+          <div class="stat-box">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Menu Items</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Hours Daily</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Passionate Partners</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-images reveal">
+        <img src="images/cafe-interior.jpg"
+             alt="Coffee&Co café interior with black walls and gold accents"
+             class="experience-img-main">
+
+        <img src="images/flat-white.jpg"
+             alt="Flat White at Coffee&Co"
+             class="experience-img-top">
+
+        <img src="images/chicken-fajita-club.jpg"
+             alt="Chicken Fajita Club Sandwich"
+             class="experience-img-bottom">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     MAP SECTION
+========================================================= -->
+<section class="map-section">
+
+  <div class="map-header reveal">
+    <span class="eyebrow gold">FIND US</span>
+    <h2>Come visit Coffee&Co.</h2>
+    <p>
+      Ground Floor, Boulevard Mall, Canal Road, Faisalabad —
+      open every day of the week.
+    </p>
+  </div>
+
+  <iframe
+    class="map-frame"
+    src="https://www.google.com/maps?q=Boulevard+Mall+Canal+Road+Faisalabad+Pakistan&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Coffee&Co Location — Boulevard Mall, Canal Road, Faisalabad">
+  </iframe>
+
+  <div class="map-info-bar">
+    <i>📍</i>
+    <span>Boulevard Mall, Canal Road, Faisalabad</span>
+    <span>·</span>
+    <span>Open Daily · 12:00 PM – 2:00 AM</span>
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     RESERVATION SECTION
+========================================================= -->
+<section id="reserve" class="reserve-section">
+  <div class="reserve-grid">
+
+    <div class="reserve-left reveal">
+      <span class="eyebrow gold">RESERVATIONS</span>
+      <h2>Reserve your <em>table</em></h2>
+      <div class="gold-line"></div>
+
+      <p>
+        Planning a special evening, a family gathering, or a
+        business lunch? Secure your table at Coffee&Co and let
+        us take care of the rest. Fill in the form and our team
+        will confirm your reservation.
+      </p>
+
+      <p>
+        For large bookings of more than 10 guests or private
+        events, please mention the details in your request —
+        we'll arrange the space just for you.
+      </p>
+
+      <div class="reserve-image-wrapper">
+        <img src="images/cafe-interior.jpg"
+             alt="Coffee&Co café interior in Faisalabad"
+             class="reserve-left-image">
+        <span class="reserve-image-badge">OUR SPACE</span>
+      </div>
+    </div>
+
+    <div class="reserve-form reveal">
+
+      <div class="form-success" id="formSuccess">
+        ✓ Thank you! We'll confirm your reservation shortly.
+      </div>
+
+      <form id="reservationForm" onsubmit="handleReservation(event)">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+92 300 0000000" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" required>
+              <option value="">Select guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3-4">3 – 4 Guests</option>
+              <option value="5-6">5 – 6 Guests</option>
+              <option value="7-10">7 – 10 Guests</option>
+              <option value="10+">More than 10 Guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="occasion">Occasion</label>
+            <select id="occasion">
+              <option value="">Select occasion</option>
+              <option value="casual">Casual Meetup</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="business">Business Lunch</option>
+              <option value="family">Family Gathering</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row full">
+          <div class="form-group">
+            <label for="requests">Special Requests</label>
+            <textarea id="requests"
+                      placeholder="Any dietary requirements, seating preferences, or special requests..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="form-submit">
+          CONFIRM RESERVATION
+        </button>
+
+        <p class="form-note">
+          * All prices are exclusive of GST. Reservations are
+          subject to availability. Our team will contact you
+          to confirm.
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer>
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+      <h2>Coffee&Co</h2>
+      <p>
+        Specialty coffee, fresh food and good company.
+        Come for the coffee. Stay for the atmosphere.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <a href="#coffee">Coffee</a>
+      <a href="#sandwiches">Sandwiches</a>
+      <a href="#desserts">Desserts</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Visit</h4>
+      <a href="#reserve">Reserve a Table</a>
+      <a href="#">Opening Hours</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/coffeeandcopk/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Coffee&Co. All rights reserved.</span>
+    <span>Boulevard Mall, Canal Road, Faisalabad</span>
+  </div>
+</footer>
+
+
+<!-- =========================================================
+     CART NOTIFICATION
+========================================================= -->
+<div id="cartNotification" class="cart-notification">
+  Added to your order
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
